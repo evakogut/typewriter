@@ -32,10 +32,10 @@ body{
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
   animation-direction: alternate-reverse;
-	animation-duration: 3s;
-	animation-name: typewriter, blinkTextCursor;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+  animation-duration: 3s;
+/*   animation-name: typewriter, blinkTextCursor; */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 @keyframes typewriter{
   from{width: 0;}
