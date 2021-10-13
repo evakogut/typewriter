@@ -9,43 +9,49 @@ html{
 body{
   height: calc(100vh - 8em);
   padding: 4em;
-  color: rgba(255,255,255,1);
+  color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;
-  background-color: rgb(25,25,25);
+/*   background-color: rgb(25,25,25); */
 }
 .line-1{
     position: relative;
     top: 50%;
     width: 24em;
     margin: 0 auto;
-    border-right: 2px solid rgba(225,225,225,1);
+    border-right: 2px solid rgba(255,255,255,1);
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    animation-fill-mode: forwards;
+    /* animation-fill-mode: forwards; */
+
+
 }
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
+  animation: typewriter 6s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
-  animation-direction: alternate-reverse;
-  animation-duration: 3s;
-/*   animation-name: typewriter, blinkTextCursor; */
+  animation-direction: alternate;
+  animation-duration: 8s;
+  animation-name: typewriter,
+                  blinkTextCursor;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 20.5em;}
+  to{width: 22em;}
 }
 @keyframes blinkTextCursor{
   0% {
     border-right-color: rgba(131,249,12,1);
+    animation-delay: 10s;
   }
   100% {
     border-right-color: transparent;
+    border-right-color: rgba(131,249,12,1);
+    animation-delay: 10s;
   }
 }
