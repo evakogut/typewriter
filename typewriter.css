@@ -31,8 +31,8 @@ body{
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 6s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriter 6s steps(24) 1s 1 normal both,
+             blinkTextCursor 500ms steps(24) infinite normal;
   animation-direction: alternate;
   animation-duration: 8s;
   animation-name: typewriter,
